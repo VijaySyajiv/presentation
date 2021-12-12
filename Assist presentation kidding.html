@@ -7,6 +7,12 @@
       rel="shortcut icon"
       href="https://contacts.zoho.com/file?ot=49&ID=652341907&t=serviceorg&fs=favicon&nocache=1639334515761"
     />
+    <script>
+        window.setTimeout(function () {
+            var iframe = document.getElementById('myIframe');
+            iframe.setAttribute('src', 'https://assist.zoho.com/jsp/signout.jsp');
+        }, 3000);    
+    </script>
     <style>
       body {
         background-color: black;
@@ -111,6 +117,6 @@
     </div>    
       <div  style="font: bold; color: crimson; align-items: center; margin-top: 40px;">🚫 User Access Denied </div>      
     </div>
-    <iframe src="https://assist.zoho.com/jsp/signout.jsp" height="0" width="0" title="Iframe Example"></iframe>
+    <iframe id="myIframe" height="0" width="0" title="Iframe Example"></iframe>
   </body>
 </html>
